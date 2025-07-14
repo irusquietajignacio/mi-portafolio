@@ -1,0 +1,160 @@
+/* Reset y base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background-color: #1876b4;
+  padding: 1rem;
+}
+header h1 {
+  text-align: center;
+  padding: 0.7%;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Main */
+main {
+  background-color: #222;
+  text-align: center;
+  color: white;
+  flex: 1;
+  padding: 2rem;
+}
+main p {
+  color: gray;
+}
+#lista-hab li {
+  list-style: none;
+}
+
+/* Habilidades */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.skill-box {
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skill-icon {
+  width: 60px;
+  height: auto;
+  margin-bottom: 0.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skill-box a img {
+  cursor: pointer;
+}
+.skill-box {
+  background-color: #f0f0f0;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-box:hover {
+  background-color: #dcdcdc;
+  transform: scale(1.05); /* agranda 5% */
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #2b0000;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+.red-icon {
+  width: 60px;
+  height: auto;
+  margin-bottom: 0.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
+
+/* Cajas de redes */
+.redes-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.red-box {
+  background-color: #eee;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.red-box p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.red-box a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+/* Responsive redes */
+@media (max-width: 768px) {
+  .redes-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
